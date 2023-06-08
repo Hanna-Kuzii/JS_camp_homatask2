@@ -1,0 +1,84 @@
+.top-selling__title {
+  margin-bottom: 60px;
+}
+.top-selling__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.img-container {
+  width: 100%;
+  max-height: 457px;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+.destinations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 2.5vw;
+}
+.destinations__card {
+  position: relative;
+  max-width: 315px;
+  width: 100%;
+  border-radius: 24px;
+  -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+          filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+}
+.destinations__card:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+          box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+.destinations__picture {
+  height: 100%;
+}
+.destinations__description {
+  position: absolute;
+  top: 72%;
+  padding: 27px 20px;
+  padding-bottom: 0;
+  min-height: 130px;
+  width: 100%;
+  border-radius: 0px 0px 24px 24px;
+  background-color: #fff;
+  font-size: 1.8em;
+  line-height: 124.5%;
+  color: #5e6282;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 5px;
+  -webkit-column-gap: 10px;
+     -moz-column-gap: 10px;
+          column-gap: 10px;
+}
+.destinations__town {
+  grid-area: 1/1/2/2;
+}
+.destinations__price {
+  text-align: right;
+  grid-area: 1/2/2/3;
+}
+.destinations__duration {
+  display: block;
+  grid-area: 2/1/3/3;
+}
+
+@media (max-width: 769px) {
+  .destinations {
+    gap: 50px;
+  }
+}/*# sourceMappingURL=top-selling.css.map */

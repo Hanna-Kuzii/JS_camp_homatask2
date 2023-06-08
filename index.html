@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat&family=Noto+Sans:wght@500&family=Open+Sans:wght@600&family=Poppins:wght@400;500;600;700&family=Roboto&family=Volkhov:wght@700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/style/style.css" />
+  <title>Travel agency</title>
+</head>
+
+<body>
+  <main class="main-page">
+    <section class="main-page__top-block top-block">
+      <header class="top-block__header header">
+        <img src="/image/top-block/logo.svg" alt="Jadoo" class="header__logo">
+        <nav class="header__navigation navigation">
+          <ul class="navigation__list">
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Destinations</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Hotels</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Flights</a>
+            </li>
+            <li class="navigation__item">
+              <a href="#" class="navigation__link">Bookings</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__auth auth">
+          <a href="#" class="auth__button auth__button_login">Login</a>
+          <a href="#" class="auth__button auth__button_signup">Sign up</a>
+        </div>
+        <select name="language" id="lang" class="header__language language">
+          <option value="en" class="language__item">EN</option>
+          <option value="ua" class="language__item">UA</option>
+        </select>
+        <div class="header__burger burger">
+          <input class="burger__input" type="checkbox" id="menu__toggle" />
+          <label class="burger__button" for="menu__toggle">
+            &#8801;
+          </label>
+        </div>
+      </header>
+      <section class="top-block__hero-content hero-content">
+        <div class="hero-content__topic">
+          <div class="hero-content__subtitle">
+            Best Destinations around the world
+          </div>
+          <div class="hero-content__title">
+            Travel, enjoy and live a new and full life
+          </div>
+          <div class="hero-content__description">
+            Built Wicket longer admire do barton vanity itself do in it.
+            Preferred to sportsmen it engrossed listening. Park gate sell they
+            west hard for the.
+          </div>
+          <div class="hero-content__buttons buttons-information">
+            <a href="#" class="buttons-information__button button-find">
+              Find out more
+            </a>
+            <a href="#" class="buttons-information__button button-play">
+              <!-- <svg width="64px" height="64px" viewBox="0 0 24.00 24.00" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#DF6951" stroke-width="1.704" transform="rotate(0)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round" stroke="#CCCCCC" stroke-width="0.192"></g><g id="SVGRepo_iconCarrier"> <path fill-rule="evenodd" clip-rule="evenodd" d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM9 17L16.8571 12L9 7V17Z" fill="#DF6951"></path> </g></svg> -->
+              <img src="/image/top-block/play-button.svg" alt="play" class="button-play__logo">
+              Play Demo
+            </a>
+          </div>
+        </div>
+        <!-- <img src="/image/top-block/background-traveller.svg" alt="traveller" class="hero-content__image"> -->
+      </section>
+      <img src="/image/top-block/plane.svg" alt="plane" class="top-block__plane plane">
+    </section>
+    <section class="main-page__services services">
+      <div class="services__subtitle block-subtitle">CATEGORY</div>
+      <div class="services__title block-title">We Offer Best Services</div>
+      <div class="services__categories categories">
+        <div class="categories__card">
+          <div class="categories__images">
+            <img src="/image/services/satellite-dish.svg" alt="satellite-dish" class="categories__picture" />
+          </div>
+          <div class="categories__title">Calculated Weather</div>
+          <div class="categories__description">
+            Built Wicket longer admire do barton vanity itself do in it.
+          </div>
+        </div>
+        <div class="categories__card">
+          <div class="categories__images">
+            <img src="/image/services/plane.svg" alt="plane" class="categories__picture" />
+          </div>
+          <div class="categories__title">Best Flights</div>
+          <div class="categories__description">
+            Engrossed listening. Park gate sell they west hard for the.
+          </div>
+        </div>
+        <div class="categories__card">
+          <div class="categories__images">
+            <img src="/image/services/microphone.svg" alt="microphone" class="categories__picture" />
+          </div>
+          <div class="categories__title">Local Events</div>
+          <div class="categories__description">
+            Barton vanity itself do in it. Preferd to men it engrossed
+            listening.
+          </div>
+        </div>
+        <div class="categories__card">
+          <div class="categories__images">
+            <img src="/image/services/power-supply.svg" alt="power-supply" class="categories__picture" />
+          </div>
+          <div class="categories__title">Customization</div>
+          <div class="categories__description">
+            We deliver outsourced aviation services for military customers
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__top-selling top-selling">
+      <div class="top-selling__subtitle block-subtitle">Top Selling</div>
+      <div class="top-selling__title block-title">Top Destinations</div>
+      <div class="top-selling__list destinations">
+        <div class="destinations__card">
+          <div class="img-container">
+            <img src="/image/top-selling/destination_Rome.svg" alt="Rome" class="destinations__picture" />
+          </div>
+          <div class="destinations__description">
+            <div class="destinations__town">Rome, Italy</div>
+            <div class="destinations__price">$5,42k</div>
+            <div class="destinations__duration">
+              <img src="/image/top-selling/location.svg" alt="location" class="destinations__location" />
+              10 Days Trip
+            </div>
+          </div>
+        </div>
+        <div class="destinations__card">
+          <div class="img-container">
+            <img src="/image/top-selling/destination_London.svg" alt="London" class="destinations__picture" />
+          </div>
+          <div class="destinations__description">
+            <div class="destinations__town">London, England</div>
+            <div class="destinations__price">$4,2k</div>
+            <div class="destinations__duration">
+              <img src="/image/top-selling/location.svg" alt="location" class="destinations__location" />
+              12 Days Trip
+            </div>
+          </div>
+        </div>
+        <div class="destinations__card">
+          <div class="img-container">
+            <img src="/image/top-selling/destination_Europe.svg" alt="Europe" class=" destinations__picture">
+          </div>
+          <div class="destinations__description">
+            <div class="destinations__town">Full Europe</div>
+            <div class="destinations__price">$15k</div>
+            <div class="destinations__duration">
+              <img src="/image/top-selling/location.svg" alt="location" class="destinations__location" />
+              28 Days Trip
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__book-trip book-trip">
+      <div class="book-trip__subtitle block-subtitle">Easy and Fast</div>
+      <div class="book-trip__booked-steps booked-steps">
+        <div class="booked-steps__title block-title">
+          Book your next trip in 3 easy steps
+        </div>
+        <div class="booked-steps__steps">
+          <div class="booked-steps__step step">
+            <img src="/image/book-trip/steps-choose.svg" alt="choose destination" class="step__icon" />
+            <div class="step__description">
+              <div class="step__title">Choose Destination</div>
+              <div class="step__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </div>
+            </div>
+          </div>
+          <div class="booked-steps__step step">
+            <img src="/image/book-trip/steps-payment.svg" alt="make payment" class="step__icon" />
+            <div class="step__description">
+              <div class="step__title">Make Payment</div>
+              <div class="step__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </div>
+            </div>
+          </div>
+          <div class="booked-steps__step step">
+            <img src="/image/book-trip/steps-airport.svg" alt="reach airport" class="step__icon" />
+            <div class="step__description">
+              <div class="step__title">Reach Airport on Selected Date</div>
+              <div class="step__text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Urna,
+                tortor tempus.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-trip__example-booked example-booked">
+        <div class="example-booked__trip trip">
+          <img src="/image/book-trip/example-booked/example-booked.svg" alt="example booked trip"
+            class="example-booked__picture" />
+          <div class="example-booked__description">
+            <div class="example-booked__trip-name">Trip To Greece</div>
+            <div class="example-booked__add-info">
+              <div class="example-booked__dates">14-29 June</div>
+              <div class="example-booked__author"> by Robbin joseph</div>
+            </div>
+            <div class="example-booked__icons">
+              <img src="/image/book-trip/example-booked/leaf.svg" alt="leaf" class="example-booked__icon" />
+              <img src="/image/book-trip/example-booked/map_icon.svg" alt="map" class="example-booked__icon" />
+              <img src="/image/book-trip/example-booked/send.svg" alt="send" class="example-booked__icon" />
+            </div>
+            <div class="example-booked__likes">
+              <div class="example-booked__count-people">
+                <img src="/image/book-trip/example-booked/building.svg" alt="building"
+                  class="example-booked__icon-building" />
+                24 people going
+              </div>
+              <img src="/image/book-trip/example-booked/heart.svg" alt="heart" class="example-booked__heart" />
+            </div>
+          </div>
+        </div>
+        <div class="example-booked__ongoing ongoing">
+          <img src="/image/book-trip/example-booked/ongoing.svg" alt="ingoing trip" class="ongoing__picture" />
+          <div class="ongoing__description">
+            <div class="ongoing__subtitle">Ongoing</div>
+            <div class="ongoing__topic">Trip to Rome</div>
+            <div class="ongoing__completed completed">
+              <div class="completed__number">
+                <div class="completed__percent">40% </div>
+                <div class="completed__text">completed</div>
+              </div>
+              <div class="completed__progress-bar progress-bar">
+                <div class="progress-bar__progress"></div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__testimonials testimonials">
+      <div class="testimonials__topic">
+        <div class="testimonials__subtitle block-subtitle">Testimonials</div>
+        <div class="testimonials__title block-title">
+          What people say about Us.
+        </div>
+      </div>
+      <div class="testimonials__review review">
+        <img src="/image/testimonials/review-avatar.svg" alt="clients avatar" class="review__avatar" />
+        <div class="review__text">
+          <div class="review__story">
+            “On the Windows talking painted pasture yet its express parties
+            use. Sure last upon he same as knew next. Of believed or diverted
+            no.”
+          </div>
+          <div class="review__author">Mike Taylor</div>
+          <div class="review__location">Lahore, Pakistan</div>
+        </div>
+      </div>
+    </section>
+    <section class="main-page__airlines airlines">
+      <a href="http://www.axonaviation.com/" class="airlines__link">
+        <img src="/image/airlines/icon-axon.svg" alt="axon" class="airlines__item" />
+      </a>
+      <a href="https://www.jetstar.com/" class="airlines__link">
+        <img src="/image/airlines/icon-jetstar.svg" alt="jetstar" class="airlines__item" />
+      </a>
+      <a href="https://www.expedia.com/" class="airlines__link">
+        <img src="/image/airlines/icon-expedia.svg" alt="expedia" class="airlines__item" />
+      </a>
+      <a href="https://www.qantas.com/" class="airlines__link">
+        <img src="/image/airlines/icon-qantas.svg" alt="qantas" class="airlines__item" />
+      </a>
+      <a href="https://www.alternativeairlines.com/alitalia" class="airlines__link">
+        <img src="/image/airlines/icon-alitalia.svg" alt="alitalia" class="airlines__item" />
+      </a>
+    </section>
+    <section class="main-page__subscribe subscribe">
+      <div class="subscribe__title">
+        Subscribe to get information, latest news and other interesting offers
+        about Cobham
+      </div>
+      <form action="" class="subscribe__form form-subscribe">
+        <input type="text" name="email" placeholder="Your e-mail" class="form-subscribe__input" />
+        <input type="submit" value="Subscribe" class="form-subscribe__button" />
+      </form>
+      <img src="/image/subscribe/subscibe-send.svg" alt="send subscribe" class="subscribe__send-icon" />
+    </section>
+    <footer class="main-page__footer footer">
+      <div class="footer__logo logo">
+        <div class="logo__name">Jadoo.</div>
+        <div class="logo__motto">
+          Book your trip in minute, get full Control for much longer.
+        </div>
+      </div>
+      <div class="footer__nav navigation-rows">
+        <div class="navigation-rows__company company row">
+          <div class="company__title row__title">Company</div>
+          <ul class="company__list row__list">
+            <li class="company__item row__item">About</li>
+            <li class="company__item row__item">Careers</li>
+            <li class="company__item row__item">Mobile</li>
+          </ul>
+        </div>
+        <div class="navigation-rows__contact contact row">
+          <div class="contact__title row__title">Contact</div>
+          <ul class="contact__list row__list">
+            <li class="contact__item row__item">Help/FAQ</li>
+            <li class="contact__item row__item">Press</li>
+            <li class="contact__item row__item">Affilates</li>
+          </ul>
+        </div>
+        <div class="navigation-rows__more more row">
+          <div class="more__title row__title">More</div>
+          <ul class="more__list row__list">
+            <li class="more__item row__item">Airlinefees</li>
+            <li class="more__item row__item">Airline</li>
+            <li class="more__item row__item">Low fare tips</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__links links">
+        <div class="links__social social">
+          <a href="https://www.facebook.com/" class="social__link">
+            <img src="/image/footer/logo-facebook.svg" alt="facebook" class="social__icon" />
+          </a>
+          <a href="https://www.instagram.com/" class="social__link">
+            <img src="/image/footer/logo-instagram.svg" alt="instagram" class="social__icon" />
+          </a>
+          <a href="https://twitter.com/" class="social__link">
+            <img src="/image/footer/logo-twitter.svg" alt="twitter" class="social__icon" />
+          </a>
+          <a href="https://youtube.com/" class="social__link">
+            <img src="/image/footer/logo-youtube.svg" alt="youtube" class="social__icon" />
+          </a>
+        </div>
+        <div class="links__download download">
+          <div class="download__title">
+            Discover our app
+          </div>
+          <div class="download__links">
+            <a href="#" class="download__item">
+              <img src="/image/footer/google-play.svg" alt="google play" class="download__icon" />
+            </a>
+            <a href="#" class="download__item">
+              <img src="/image/footer/play-store.svg" alt="google play" class="download__icon" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__author author">All rights <a href="mailto:reserved@jadoo.co">reserved@jadoo.co</a></div>
+    </footer>
+  </main>
+</body>
+
+</html>

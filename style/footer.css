@@ -1,0 +1,190 @@
+.footer {
+  display: grid;
+  grid-template-columns: 20% 45% 20%;
+  grid-template-rows: 1fr -webkit-min-content;
+  grid-template-rows: 1fr min-content;
+  gap: 83px 7.5%;
+  grid-template-areas: "footer__logo footer__nav footer__links" "footer__author footer__author footer__author";
+}
+.footer__author {
+  grid-area: footer__author;
+}
+
+.logo__name {
+  font-size: 4.4em;
+  line-height: 150%;
+  color: #181e4b;
+}
+.logo__motto {
+  font-size: 1.3em;
+  line-height: 124.5%;
+}
+
+.navigation-rows {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 72px;
+}
+
+.row__title {
+  margin-bottom: 34px;
+  font-weight: 700;
+  font-size: 2.1em;
+  line-height: 124.5%;
+  color: #080809;
+}
+.row__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.row__item {
+  font-size: 1.8em;
+  line-height: 124.5%;
+}
+
+.links__social {
+  margin-top: 10px;
+  margin-bottom: 35px;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 20px;
+}
+
+.download__title {
+  margin-bottom: 16px;
+  font-size: 2em;
+  line-height: 124.5%;
+}
+.download__links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 7px;
+}
+
+.author {
+  font-size: 1.4em;
+  line-height: 124.5%;
+  text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 1fr -webkit-min-content -webkit-min-content;
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-areas: "footer__logo footer__nav" "footer__links footer__links" "footer__author footer__author";
+    row-gap: 30px;
+    -webkit-column-gap: 10vw;
+       -moz-column-gap: 10vw;
+            column-gap: 10vw;
+  }
+  .links {
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20vw;
+  }
+  .links__download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+}
+@media (max-width: 769px) {
+  .footer .navigation-rows {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  .footer .navigation-rows .row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .footer .navigation-rows .row__title {
+    margin: 0;
+  }
+  .footer .navigation-rows .row__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+  }
+  .footer .links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 10px;
+  }
+  .footer .links__social {
+    margin: 0;
+  }
+}
+@media (max-width: 415px) {
+  .footer {
+    background-color: #fff1da;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 58px;
+  }
+  .footer__logo {
+    width: 60%;
+  }
+  .footer .navigation-rows .row {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 34px;
+  }
+  .footer .navigation-rows .row__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 12px;
+  }
+  .footer .links {
+    gap: 41px;
+  }
+  .footer .links__social {
+    margin: 0 auto;
+  }
+  .footer .links__download {
+    margin: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 16px;
+  }
+  .footer .links .download__title {
+    margin: 0 auto;
+  }
+}/*# sourceMappingURL=footer.css.map */

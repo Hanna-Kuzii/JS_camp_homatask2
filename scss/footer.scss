@@ -1,0 +1,177 @@
+@import "variables";
+
+.footer {
+  display: grid;
+  grid-template-columns: 20% 45% 20%;
+  grid-template-rows: 1fr min-content;
+  gap: 83px 7.5%;
+  grid-template-areas:
+    "footer__logo footer__nav footer__links"
+    "footer__author footer__author footer__author";
+
+  &__author {
+    grid-area: footer__author;
+  }
+}
+
+.logo {
+  &__name {
+    font-size: 4.4em;
+    line-height: 150%;
+    color: $text-color-main-blue;
+  }
+  &__motto {
+    font-size: 1.3em;
+    line-height: 124.5%;
+  }
+}
+
+.navigation-rows {
+  display: flex;
+  gap: 72px;
+}
+
+.row {
+  &__title {
+    margin-bottom: 34px;
+    font-weight: 700;
+    font-size: 2.1em;
+    line-height: 124.5%;
+    color: #080809;
+  }
+
+  &__list {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+  }
+
+  &__item {
+    font-size: 1.8em;
+    line-height: 124.5%;
+  }
+}
+
+.links {
+  &__social {
+    margin-top: 10px;
+    margin-bottom: 35px;
+  }
+}
+
+.social {
+  display: flex;
+  gap: 20px;
+}
+
+.download {
+  &__title {
+    margin-bottom: 16px;
+    font-size: 2em;
+    line-height: 124.5%;
+  }
+
+  &__links {
+    display: flex;
+    gap: 7px;
+  }
+}
+
+.author {
+  font-size: 1.4em;
+  line-height: 124.5%;
+  text-align: center;
+}
+
+@media (max-width: 1025px) {
+  .footer {
+    grid-template-columns: 20% 75%;
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-areas:
+      "footer__logo footer__nav"
+      "footer__links footer__links"
+      "footer__author footer__author";
+    row-gap: 30px;
+    column-gap: 10vw;
+  }
+  .links {
+    margin: 0;
+    display: flex;
+    gap: 20vw;
+
+    &__download {
+      display: flex;
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .footer {
+    .navigation-rows {
+      flex-direction: column;
+      gap: 20px;
+
+      .row {
+        display: flex;
+        justify-content: space-between;
+        &__title {
+          margin: 0;
+        }
+        &__list {
+          flex-direction: row;
+          gap: 20px;
+        }
+      }
+    }
+    .links {
+      flex-direction: column;
+      gap: 10px;
+
+      &__social {
+        margin: 0;
+      }
+    }
+  }
+}
+
+@media (max-width: 415px) {
+  .footer {
+    background-color: #fff1da;
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+
+    &__logo {
+      width: 60%;
+    }
+    .navigation-rows {
+      .row {
+        flex-direction: column;
+        gap: 34px;
+        &__list {
+          flex-direction: column;
+          gap: 12px;
+        }
+      }
+    }
+    .links {
+      gap: 41px;
+
+      &__social {
+      margin: 0 auto;
+
+      }
+      &__download {
+        margin: auto;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .download {
+        &__title {
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+}

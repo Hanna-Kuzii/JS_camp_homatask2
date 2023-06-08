@@ -1,0 +1,141 @@
+@import "variables";
+@import "/style/reset.css";
+@import "/style/top-block.css";
+@import "/style/services.css";
+@import "/style/top-selling.css";
+@import "/style/book-trip.css";
+@import "/style/testimonials.css";
+@import "/style/airlines.css";
+@import "/style/subscribe.css";
+@import "/style/footer.css";
+
+.main-page {
+  font-family: "Poppins", "Open Sans", "Lato", "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: $text-color-grey;
+  background-image: url(/image/top-block/decore.svg);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+
+  &__top-block {
+    margin-bottom: 90px;
+  }
+
+  &__services {
+    margin-left: 11vw;
+    padding-right: 13vw;
+    margin-bottom: 123px;
+    background-image: url(/image/services/pluses.svg);
+    background-position: 95% top;
+    background-repeat: no-repeat;
+  }
+
+  &__top-selling {
+    padding: 0 15vw 0 12vw;
+    // margin-left: 12vw;
+    margin-bottom: 186px;
+    // padding-right: 16vw;
+    background-image: url(/image/top-selling/decore.svg);
+    background-repeat: no-repeat;
+    background-position-x: 85%;
+    background-position-y: 80%;
+  }
+
+  &__book-trip {
+    padding-left: 13vw;
+    padding-right: 10vw;
+    margin-bottom: 200px;
+  }
+
+  &__testimonials {
+    padding-left: 13vw;
+    padding-right: 14vw;
+    margin-bottom: 173px;
+  }
+
+  &__airlines {
+    margin: 0 13vw;
+    margin-bottom: 140px;
+  }
+
+  &__subscribe {
+    margin: 0 10vw;
+    margin-bottom: 166px;
+  }
+
+  &__footer {
+    padding: 0 13vw 20px;
+  }
+}
+
+.block-subtitle {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 150%;
+  text-align: center;
+  color: $text-color-grey;
+}
+.block-title {
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+  text-transform: capitalize;
+  color: $text-color-main-dark;
+}
+
+@media (max-width: 1025px) {
+  .main-page {
+    font-size: 9px;
+
+    &__top-selling {
+      background-position-x: 90%;
+    }
+  }
+}
+
+@media (max-width: 769px) {
+  .main-page {
+    font-size: 8px;
+    & > * {
+      margin-bottom: 100px;
+    }
+  }
+}
+
+
+@media (max-width: 415px) {
+  .main-page {
+    font-size: 10px;
+    background-image: none;
+
+    &__top-selling {
+    background-position-y: 120%;
+    }
+    &__book-trip {
+      padding: 0 2vw;
+    }
+    &__testimonials {
+      padding: 0 6vw;
+    }
+  }
+  .block-subtitle {
+    font-size: 2em;
+  }
+  .block-title {
+    font-size: 4em;
+  }
+}
+
+// @import '_reset';
+// @import 'top-block';
+// @import 'services';
+// @import 'top-selling';
+// @import 'book-trip';
+// @import 'testimonials';
+// @import 'airlines';
+// @import 'subscribe';
+// @import 'footer';

@@ -1,0 +1,115 @@
+@import "/style/reset.css";
+@import "/style/top-block.css";
+@import "/style/services.css";
+@import "/style/top-selling.css";
+@import "/style/book-trip.css";
+@import "/style/testimonials.css";
+@import "/style/airlines.css";
+@import "/style/subscribe.css";
+@import "/style/footer.css";
+.main-page {
+  font-family: "Poppins", "Open Sans", "Lato", "Montserrat", sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  color: #5e6282;
+  background-image: url(/image/top-block/decore.svg);
+  background-position-x: right;
+  background-position-y: top;
+  background-repeat: no-repeat;
+}
+.main-page__top-block {
+  margin-bottom: 90px;
+}
+.main-page__services {
+  margin-left: 11vw;
+  padding-right: 13vw;
+  margin-bottom: 123px;
+  background-image: url(/image/services/pluses.svg);
+  background-position: 95% top;
+  background-repeat: no-repeat;
+}
+.main-page__top-selling {
+  padding: 0 15vw 0 12vw;
+  margin-bottom: 186px;
+  background-image: url(/image/top-selling/decore.svg);
+  background-repeat: no-repeat;
+  background-position-x: 85%;
+  background-position-y: 80%;
+}
+.main-page__book-trip {
+  padding-left: 13vw;
+  padding-right: 10vw;
+  margin-bottom: 200px;
+}
+.main-page__testimonials {
+  padding-left: 13vw;
+  padding-right: 14vw;
+  margin-bottom: 173px;
+}
+.main-page__airlines {
+  margin: 0 13vw;
+  margin-bottom: 140px;
+}
+.main-page__subscribe {
+  margin: 0 10vw;
+  margin-bottom: 166px;
+}
+.main-page__footer {
+  padding: 0 13vw 20px;
+}
+
+.block-subtitle {
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 1.8em;
+  line-height: 150%;
+  text-align: center;
+  color: #5e6282;
+}
+
+.block-title {
+  font-family: "Volkhov";
+  font-weight: 700;
+  font-size: 5em;
+  text-align: center;
+  text-transform: capitalize;
+  color: #14183e;
+}
+
+@media (max-width: 1025px) {
+  .main-page {
+    font-size: 9px;
+  }
+  .main-page__top-selling {
+    background-position-x: 90%;
+  }
+}
+@media (max-width: 769px) {
+  .main-page {
+    font-size: 8px;
+  }
+  .main-page > * {
+    margin-bottom: 100px;
+  }
+}
+@media (max-width: 415px) {
+  .main-page {
+    font-size: 10px;
+    background-image: none;
+  }
+  .main-page__top-selling {
+    background-position-y: 120%;
+  }
+  .main-page__book-trip {
+    padding: 0 2vw;
+  }
+  .main-page__testimonials {
+    padding: 0 6vw;
+  }
+  .block-subtitle {
+    font-size: 2em;
+  }
+  .block-title {
+    font-size: 4em;
+  }
+}/*# sourceMappingURL=style.css.map */
