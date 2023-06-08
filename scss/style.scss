@@ -1,5 +1,7 @@
 @import "variables";
-@import "style/reset.css";
+@import 'reset';
+
+// @import "style/_reset.css";
 // @import "style/top-block.css";
 // @import "style/services.css";
 // @import "style/top-selling.css";
@@ -14,7 +16,7 @@
   font-size: 10px;
   font-weight: 500;
   color: $text-color-grey;
-  background-image: url(image/top-block/decore.svg);
+  background-image: url(/image/top-block/decore.svg);
   background-position-x: right;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -127,7 +129,6 @@
   }
 }
 
-// @import '_reset';
 // @import '_variables';
 @import 'top-block';
 @import 'services';
