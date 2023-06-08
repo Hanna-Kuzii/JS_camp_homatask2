@@ -22,7 +22,7 @@
 }
 .categories__images {
   margin-bottom: 30px;
-  background-image: url(/image/services/square.svg);
+  background-image: url(image/services/square.svg);
   background-repeat: no-repeat;
 }
 .categories__title {

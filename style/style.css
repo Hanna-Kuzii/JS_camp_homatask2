@@ -1,18 +1,18 @@
-@import "/style/reset.css";
-@import "/style/top-block.css";
-@import "/style/services.css";
-@import "/style/top-selling.css";
-@import "/style/book-trip.css";
-@import "/style/testimonials.css";
-@import "/style/airlines.css";
-@import "/style/subscribe.css";
-@import "/style/footer.css";
+@import "style/reset.css";
+@import "style/top-block.css";
+@import "style/services.css";
+@import "style/top-selling.css";
+@import "style/book-trip.css";
+@import "style/testimonials.css";
+@import "style/airlines.css";
+@import "style/subscribe.css";
+@import "style/footer.css";
 .main-page {
   font-family: "Poppins", "Open Sans", "Lato", "Montserrat", sans-serif;
   font-size: 10px;
   font-weight: 500;
   color: #5e6282;
-  background-image: url(/image/top-block/decore.svg);
+  background-image: url(image/top-block/decore.svg);
   background-position-x: right;
   background-position-y: top;
   background-repeat: no-repeat;
@@ -24,14 +24,14 @@
   margin-left: 11vw;
   padding-right: 13vw;
   margin-bottom: 123px;
-  background-image: url(/image/services/pluses.svg);
+  background-image: url(image/services/pluses.svg);
   background-position: 95% top;
   background-repeat: no-repeat;
 }
 .main-page__top-selling {
   padding: 0 15vw 0 12vw;
   margin-bottom: 186px;
-  background-image: url(/image/top-selling/decore.svg);
+  background-image: url(image/top-selling/decore.svg);
   background-repeat: no-repeat;
   background-position-x: 85%;
   background-position-y: 80%;
