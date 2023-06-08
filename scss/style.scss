@@ -34,9 +34,7 @@
 
   &__top-selling {
     padding: 0 15vw 0 12vw;
-    // margin-left: 12vw;
     margin-bottom: 186px;
-    // padding-right: 16vw;
     background-image: url(/image/top-selling/decore.svg);
     background-repeat: no-repeat;
     background-position-x: 85%;
@@ -106,14 +104,13 @@
   }
 }
 
-
 @media (max-width: 415px) {
   .main-page {
     font-size: 10px;
     background-image: none;
 
     &__top-selling {
-    background-position-y: 120%;
+      background-position-y: 120%;
     }
     &__book-trip {
       padding: 0 2vw;
