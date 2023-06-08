@@ -70,14 +70,14 @@ a {
   margin-left: 11vw;
   padding-right: 13vw;
   margin-bottom: 123px;
-  background-image: url(image/services/pluses.svg);
+  background-image: url(../image/services/pluses.svg);
   background-position: 95% top;
   background-repeat: no-repeat;
 }
 .main-page__top-selling {
   padding: 0 15vw 0 12vw;
   margin-bottom: 186px;
-  background-image: url(image/top-selling/decore.svg);
+  background-image: url(../image/top-selling/decore.svg);
   background-repeat: no-repeat;
   background-position-x: 85%;
   background-position-y: 80%;
@@ -334,7 +334,7 @@ a {
 }
 
 .hero-content {
-  background-image: url(image/top-block/background-traveller.svg);
+  background-image: url(../image/top-block/background-traveller.svg);
   background-repeat: no-repeat;
   background-position: right;
 }
@@ -566,7 +566,7 @@ a {
 }
 .categories__images {
   margin-bottom: 30px;
-  background-image: url(image/services/square.svg);
+  background-image: url(../image/services/square.svg);
   background-repeat: no-repeat;
 }
 .categories__title {
@@ -1080,7 +1080,7 @@ a {
   width: 100%;
   height: 100%;
   opacity: 0.5;
-  background-image: url(image/subscribe/circles.svg);
+  background-image: url(/image/subscribe/circles.svg);
   background-repeat: no-repeat;
   background-position: right top;
   -webkit-filter: grayscale(100%);
