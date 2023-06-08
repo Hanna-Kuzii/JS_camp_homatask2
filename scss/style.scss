@@ -100,7 +100,7 @@
 @media (max-width: 769px) {
   .main-page {
     font-size: 8px;
-    & > * {
+    & > *:not(:last-child) {
       margin-bottom: 100px;
     }
   }

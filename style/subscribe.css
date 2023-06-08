@@ -11,10 +11,10 @@
   left: 0;
   width: 100%;
   height: 100%;
-  opacity: 0.5;
-  background-image: url(/image/subscribe/circles.svg);
+  opacity: 0.1;
+  background-image: url(/image/subscribe/circles.svg), url(/image/subscribe/circles2.svg);
   background-repeat: no-repeat;
-  background-position: right top;
+  background-position: top right, bottom left;
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%);
   pointer-events: none;
@@ -42,6 +42,7 @@
 }
 .subscribe .form-subscribe__input {
   max-width: 420px;
+  width: 50%;
   height: 70px;
   padding-left: 28px;
   font-family: "Montserrat", sans-serif;
@@ -51,6 +52,7 @@
   color: #39425d;
   border-radius: 10px;
   border: none;
+  z-index: 1;
 }
 .subscribe .form-subscribe__button {
   padding: 22px 50px;

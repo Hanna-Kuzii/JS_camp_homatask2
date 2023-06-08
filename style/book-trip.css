@@ -49,7 +49,6 @@
 }
 .step__icon {
   max-width: 50px;
-  width: 100%;
   grid-area: step__icon;
 }
 .step__title {
