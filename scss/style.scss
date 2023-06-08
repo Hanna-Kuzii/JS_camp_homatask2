@@ -1,13 +1,13 @@
 @import "variables";
 @import "style/reset.css";
-@import "style/top-block.css";
-@import "style/services.css";
-@import "style/top-selling.css";
-@import "style/book-trip.css";
-@import "style/testimonials.css";
-@import "style/airlines.css";
-@import "style/subscribe.css";
-@import "style/footer.css";
+// @import "style/top-block.css";
+// @import "style/services.css";
+// @import "style/top-selling.css";
+// @import "style/book-trip.css";
+// @import "style/testimonials.css";
+// @import "style/airlines.css";
+// @import "style/subscribe.css";
+// @import "style/footer.css";
 
 .main-page {
   font-family: "Poppins", "Open Sans", "Lato", "Montserrat", sans-serif;
@@ -128,11 +128,12 @@
 }
 
 // @import '_reset';
-// @import 'top-block';
-// @import 'services';
-// @import 'top-selling';
-// @import 'book-trip';
-// @import 'testimonials';
-// @import 'airlines';
-// @import 'subscribe';
-// @import 'footer';
+// @import '_variables';
+@import 'top-block';
+@import 'services';
+@import 'top-selling';
+@import 'book-trip';
+@import 'testimonials';
+@import 'airlines';
+@import 'subscribe';
+@import 'footer';
