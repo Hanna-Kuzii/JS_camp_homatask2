@@ -574,6 +574,7 @@ a {
           justify-content: space-between;
 }
 .categories__card {
+  position: relative;
   max-width: 267px;
   width: 100%;
   padding: 38px;
