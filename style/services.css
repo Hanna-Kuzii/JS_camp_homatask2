@@ -2,9 +2,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -12,8 +12,9 @@
 .categories__card {
   max-width: 267px;
   width: 100%;
-  padding: 40px;
+  padding: 38px;
   text-align: center;
+  cursor: pointer;
 }
 .categories__card:hover {
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
@@ -21,7 +22,24 @@
   border-radius: 36px;
 }
 .categories__card:nth-child(1) .categories__images::after {
-  background-position: left bottom;
+  border-radius: 10px 5px 18px 5px;
+  bottom: 0;
+  right: 30px;
+}
+.categories__card:nth-child(2) .categories__images {
+  margin-bottom: 0;
+}
+.categories__card:nth-child(2) .categories__images::after {
+  top: 27%;
+  left: 28%;
+}
+.categories__card:nth-child(3) .categories__images::after {
+  top: -6px;
+  right: 40px;
+}
+.categories__card:nth-child(4) .categories__images::after {
+  top: 15px;
+  right: 30px;
 }
 .categories__images {
   position: relative;
@@ -32,11 +50,9 @@
 .categories__images::after {
   content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
   width: 50px;
   height: 50px;
-  background-color: #FFF1DA;
+  background-color: #fff1da;
   border-radius: 5px 10px 5px 18px;
   background-repeat: no-repeat;
 }

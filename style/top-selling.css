@@ -35,12 +35,24 @@
   border-radius: 24px;
   -webkit-filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
           filter: drop-shadow(0px 100px 80px rgba(0, 0, 0, 0.02)) drop-shadow(0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852)) drop-shadow(0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481)) drop-shadow(0px 20px 13px rgba(0, 0, 0, 0.01)) drop-shadow(0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185)) drop-shadow(0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481));
+  z-index: 10;
 }
 .destinations__card:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
   -webkit-box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
           box-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+}
+.destinations__card:last-child::after {
+  content: "";
+  position: absolute;
+  right: -19%;
+  bottom: 10%;
+  width: 98px;
+  height: 254px;
+  background-image: url(../image/top-selling/decore.svg);
+  background-repeat: no-repeat;
+  z-index: -1;
 }
 .destinations__picture {
   height: 100%;
