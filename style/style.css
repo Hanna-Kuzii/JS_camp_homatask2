@@ -53,6 +53,11 @@ a {
   color: inherit;
 }
 
+* {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
 .main-page {
   font-family: "Poppins", "Open Sans", "Lato", "Montserrat", sans-serif;
   font-size: 10px;
@@ -137,6 +142,14 @@ a {
 @media (max-width: 415px) {
   .main-page {
     font-size: 10px;
+    background-image: none;
+  }
+  .main-page__top-block {
+    background-image: url(../image/services/pluses.svg);
+    background-position: right 89%;
+    background-repeat: no-repeat;
+  }
+  .main-page__services {
     background-image: none;
   }
   .main-page__top-selling {
@@ -472,10 +485,11 @@ a {
 }
 @media (max-width: 415px) {
   .top-block__plane {
-    top: 45%;
-    left: 10%;
+    top: 18%;
+    left: -5%;
   }
   .top-block .header {
+    margin-bottom: 40px;
     background-color: #fff1da;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
