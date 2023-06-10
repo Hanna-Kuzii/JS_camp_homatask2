@@ -52,7 +52,6 @@
 
   &__icon {
     max-width: 50px;
-    // width: 100%;
     grid-area: step__icon;
   }
   &__title {
@@ -124,8 +123,6 @@
   }
 
   &__likes {
-    // width: 100%;
-    // margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
   }
