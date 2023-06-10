@@ -2,4 +2,4 @@
 
 
 # The second task 
-[DEMO LINK] (https://hanna-kuzii.github.io/JS_camp_homatask2/)
+[DEMO LINK](https://hanna-kuzii.github.io/JS_camp_homatask2/)
