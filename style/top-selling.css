@@ -11,13 +11,6 @@
           flex-direction: row;
 }
 
-.img-container {
-  width: 100%;
-  max-height: 457px;
-  border-radius: 24px;
-  overflow: hidden;
-}
-
 .destinations {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -53,6 +46,12 @@
   background-image: url(../image/top-selling/decore.svg);
   background-repeat: no-repeat;
   z-index: -1;
+}
+.destinations__img-container {
+  width: 100%;
+  max-height: 457px;
+  border-radius: 24px;
+  overflow: hidden;
 }
 .destinations__picture {
   height: 100%;

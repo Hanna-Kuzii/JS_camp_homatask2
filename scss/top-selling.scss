@@ -9,12 +9,7 @@
     flex-direction: row;
   }
 }
-.img-container {
-  width: 100%;
-  max-height: 457px;
-  border-radius: 24px;
-  overflow: hidden;
-}
+
 
 .destinations {
   display: flex;
@@ -50,6 +45,12 @@
       background-repeat: no-repeat;
       z-index: -1;
     }
+  }
+  &__img-container {
+    width: 100%;
+    max-height: 457px;
+    border-radius: 24px;
+    overflow: hidden;
   }
   &__picture {
     height: 100%;

@@ -22,189 +22,189 @@
   &__subtitle.block-subtitle {
     text-align: left;
   }
-}
 
-.booked-steps {
-  &__steps {
-    width: 77%;
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-  }
+  .booked-steps {
+    &__steps {
+      width: 77%;
+      display: flex;
+      flex-direction: column;
+      gap: 48px;
+    }
+  
+    &__title.block-title {
+      margin-bottom: 30px;
+      text-align: left;
+    }
 
-  &__title.block-title {
-    margin-bottom: 30px;
-    text-align: left;
-  }
-}
-
-.step {
-  font-size: 1.6em;
-  line-height: 124.5%;
-  display: grid;
-  grid-template-columns: min-content 1fr;
-  grid-template-rows: min-content min-content;
-  gap: 5px 20px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "step__icon step__title"
-    "step__icon step__text";
-
-  &__icon {
-    max-width: 50px;
-    grid-area: step__icon;
-  }
-  &__title {
-    font-weight: 700;
-    grid-area: step__title;
-  }
-  &__text {
-    font-weight: 400;
-    grid-area: step__text;
-  }
-}
-
-.example-booked {
-  position: relative;
-  padding: 20px 25px;
-  max-width: 370px;
-  width: 100%;
-  height: min-content;
-  font-weight: 500;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
-    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-  border-radius: 26px;
-
-  &__picture {
-    width: 100%;
-    margin-bottom: 26px;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-    border-radius: 24px;
-  }
-
-  &__description {
-    line-height: 124.5%;
-    color: $text-color-light;
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: min-content min-content min-content min-content;
-    grid-template-areas:
-      "example-booked__trip-name"
-      "example-booked__add-info"
-      "example-booked__icons"
-      "example-booked__likes";
-  }
-
-  &__trip-name {
-    font-size: 1.8em;
-    color: #080809;
-    display: inline;
-  }
-  &__add-info {
-    margin-top: 13px;
-    margin-bottom: 21px;
-    width: auto;
-    font-size: 1.6em;
-    display: inline-flex;
-    gap: 15px;
-  }
-
-  &__icons {
-    margin-bottom: 30px;
-    width: 100%;
-    display: inline-flex;
-    gap: 13px;
-
-    & > * {
-      height: 36px;
+    .step {
+      font-size: 1.6em;
+      line-height: 124.5%;
+      display: grid;
+      grid-template-columns: min-content 1fr;
+      grid-template-rows: min-content min-content;
+      gap: 5px 20px;
+      grid-auto-flow: row;
+      grid-template-areas:
+        "step__icon step__title"
+        "step__icon step__text";
+    
+      &__icon {
+        max-width: 50px;
+        grid-area: step__icon;
+      }
+      &__title {
+        font-weight: 700;
+        grid-area: step__title;
+      }
+      &__text {
+        font-weight: 400;
+        grid-area: step__text;
+      }
     }
   }
 
-  &__likes {
-    display: flex;
-    justify-content: space-between;
+  .example-booked {
+    position: relative;
+    padding: 20px 25px;
+    max-width: 370px;
+    width: 100%;
+    height: min-content;
+    font-weight: 500;
+    box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+      0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
+      0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+    border-radius: 26px;
+  
+    &__picture {
+      width: 100%;
+      margin-bottom: 26px;
+      filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+      border-radius: 24px;
+    }
+  
+    &__description {
+      line-height: 124.5%;
+      color: $text-color-light;
+  
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: min-content min-content min-content min-content;
+      grid-template-areas:
+        "example-booked__trip-name"
+        "example-booked__add-info"
+        "example-booked__icons"
+        "example-booked__likes";
+    }
+  
+    &__trip-name {
+      font-size: 1.8em;
+      color: #080809;
+      display: inline;
+    }
+    &__add-info {
+      margin-top: 13px;
+      margin-bottom: 21px;
+      width: auto;
+      font-size: 1.6em;
+      display: inline-flex;
+      gap: 15px;
+    }
+  
+    &__icons {
+      margin-bottom: 30px;
+      width: 100%;
+      display: inline-flex;
+      gap: 13px;
+  
+      & > * {
+        height: 36px;
+      }
+    }
+  
+    &__likes {
+      display: flex;
+      justify-content: space-between;
+    }
+  
+    &__count-people {
+      font-size: 1.6em;
+      display: inline;
+    }
+    &__heart {
+      display: inline;
+    }
+  
+    .ongoing {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      padding: 18px 20px 30px;
+      max-width: 263px;
+      width: 100%;
+      background-color: #fff;
+      box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
+        0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
+        0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
+      border-radius: 18px;
+      display: flex;
+      gap: 11px;
+    
+      &__subtitle {
+        margin-bottom: 6px;
+        font-size: 1.4em;
+      }
+      &__topic {
+        margin-bottom: 14px;
+        font-size: 1.8em;
+        color: #080809;
+      }
+    
+      .completed {
+        font-size: 1.4em;
+        &__number {
+          margin-bottom: 10px;
+          display: flex;
+        }
+        &__percent {
+          color: #8a79df;
+        }
+        &__text {
+          color: #080809;
+        }
+        .progress-bar {
+          height: 5px;
+          width: 156px;
+          background-color: #f5f5f5;
+          border-radius: 30px;
+        
+          &__progress {
+            height: 100%;
+            width: 40%;
+            background-color: #8a79df;
+            border-radius: 30px;
+          }
+        }
+      }
+    }
   }
 
-  &__count-people {
-    font-size: 1.6em;
-    display: inline;
-  }
-  &__heart {
-    display: inline;
-  }
-}
-
-.ongoing {
-  position: absolute;
-  top: 50%;
-  left: 60%;
-  padding: 18px 20px 30px;
-  max-width: 263px;
-  width: 100%;
-  background-color: #fff;
-  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852),
-    0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01),
-    0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
-  border-radius: 18px;
-  display: flex;
-  gap: 11px;
-
-  &__subtitle {
-    margin-bottom: 6px;
-    font-size: 1.4em;
-  }
-  &__topic {
-    margin-bottom: 14px;
-    font-size: 1.8em;
-    color: #080809;
-  }
-}
-
-.completed {
-  font-size: 1.4em;
-  &__number {
-    margin-bottom: 10px;
-    display: flex;
-  }
-  &__percent {
-    color: #8a79df;
-  }
-  &__text {
-    color: #080809;
-  }
-}
-
-.progress-bar {
-  height: 5px;
-  width: 156px;
-  background-color: #f5f5f5;
-  border-radius: 30px;
-
-  &__progress {
-    height: 100%;
-    width: 40%;
-    background-color: #8a79df;
-    border-radius: 30px;
-  }
 }
 
 @media (max-width: 1025px) {
   .book-trip {
     column-gap: 5%;
-  }
 
-  .booked-steps {
-    &__steps {
-      gap: 20px;
+    .booked-steps {
+      &__steps {
+        gap: 20px;
+      }
     }
-  }
-
-  .ongoing {
-    top: 50%;
-    left: 50%;
-  }
+  
+    .ongoing {
+      top: 50%;
+      left: 50%;
+    }
+  }  
 }
 
 @media (max-width: 769px) {
@@ -245,9 +245,11 @@
         flex-direction: row;
       }
     }
-  }
-  .ongoing {
-    display: none;
+    .example-booked {
+      .ongoing {
+        display: none;
+      }
+    }
   }
 }
 
