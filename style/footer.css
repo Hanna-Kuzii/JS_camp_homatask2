@@ -48,6 +48,12 @@
   font-size: 1.8em;
   line-height: 124.5%;
 }
+.row__link:hover {
+  text-shadow: 0px 15px 30px rgba(223, 105, 81, 0.3);
+  color: #df6951;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
 
 .links__social {
   margin-top: 10px;
