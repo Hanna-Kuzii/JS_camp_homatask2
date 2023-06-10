@@ -94,3 +94,10 @@
     gap: 50px;
   }
 }
+
+
+@media (max-width: 415px) {
+  .destinations__card:last-child::after {
+    content: none;
+  }
+}

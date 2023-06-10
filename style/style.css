@@ -73,6 +73,19 @@ a {
 .main-page__top-block {
   margin-bottom: 90px;
 }
+.main-page__top-block::after {
+  position: absolute;
+  content: "";
+  left: -26%;
+  top: -5%;
+  width: 478px;
+  height: 497px;
+  background: rgb(213, 174, 228);
+  background: radial-gradient(circle, rgba(213, 174, 228, 0.3) 0%, rgb(255, 255, 255) 100%);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+  z-index: -1;
+}
 .main-page__services {
   margin-left: 11vw;
   padding-right: 13vw;
@@ -105,6 +118,19 @@ a {
 }
 .main-page__footer {
   padding: 0 13vw 20px;
+}
+.main-page__footer::after {
+  position: absolute;
+  content: "";
+  right: -20%;
+  bottom: -80%;
+  width: 478px;
+  height: 497px;
+  background: rgb(213, 174, 228);
+  background: radial-gradient(circle, rgba(213, 174, 228, 0.3) 0%, rgb(255, 255, 255) 100%);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+  z-index: -1;
 }
 
 .block-subtitle {
@@ -155,10 +181,16 @@ a {
     background-image: none;
   }
   .main-page__top-selling {
-    background-position-y: 120%;
+    padding-bottom: 100px;
+    background-image: url(../image/top-selling/pluses.svg), url(../image/top-selling/pluses.svg);
+    background-position: 0 -9px, bottom left;
+    background-repeat: no-repeat;
   }
   .main-page__book-trip {
-    padding: 0 2vw;
+    padding: 75px 2vw;
+    background-image: url(../image/book-trip/example-booked/pluses.svg);
+    background-position: right 100%;
+    background-repeat: no-repeat;
   }
   .main-page__testimonials {
     padding: 0 6vw;
@@ -763,6 +795,11 @@ a {
     gap: 50px;
   }
 }
+@media (max-width: 415px) {
+  .destinations__card:last-child::after {
+    content: none;
+  }
+}
 .book-trip {
   display: grid;
   grid-template-columns: 46% 44%;
@@ -779,6 +816,22 @@ a {
 }
 .book-trip__example-booked {
   grid-area: book-trip__example-booked;
+}
+.book-trip__example-booked::after {
+  position: absolute;
+  content: "";
+  right: -2%;
+  top: -5%;
+  width: 289px;
+  height: 324px;
+  background: rgb(89, 177, 230);
+  background: radial-gradient(circle, rgba(89, 177, 230, 0.8) 0%, rgb(255, 255, 255) 100%);
+  -webkit-filter: blur(75px);
+          filter: blur(75px);
+  z-index: -1;
+}
+.book-trip__example-booked-container {
+  position: relative;
 }
 .book-trip__subtitle.block-subtitle {
   text-align: left;
@@ -831,6 +884,7 @@ a {
   height: -moz-min-content;
   height: min-content;
   font-weight: 500;
+  background-color: #fff;
   -webkit-box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
           box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.02), 0px 64.8148px 46.8519px rgba(0, 0, 0, 0.0151852), 0px 38.5185px 25.4815px rgba(0, 0, 0, 0.0121481), 0px 20px 13px rgba(0, 0, 0, 0.01), 0px 8.14815px 6.51852px rgba(0, 0, 0, 0.00785185), 0px 1.85185px 3.14815px rgba(0, 0, 0, 0.00481481);
   border-radius: 26px;
@@ -1005,6 +1059,9 @@ a {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .book-trip .example-booked {
+    margin-top: 60px;
   }
   .book-trip .example-booked .ongoing {
     display: none;
@@ -1235,6 +1292,7 @@ a {
   }
 }
 .footer {
+  position: relative;
   display: grid;
   grid-template-columns: 20% 45% 20%;
   grid-template-rows: 1fr -webkit-min-content;

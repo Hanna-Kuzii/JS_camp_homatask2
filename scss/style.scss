@@ -18,6 +18,18 @@
 
   &__top-block {
     margin-bottom: 90px;
+    &::after {
+      position: absolute;
+      content: "";
+      left: -26%;
+      top: -5%;
+      width: 478px;
+      height: 497px;
+      background: rgb(213,174,228);
+      background: radial-gradient(circle, rgba(213,174,228, 0.3) 0%, rgba(255, 255, 255, 1) 100%);
+      filter: blur(75px);
+      z-index: -1;
+    }
   }
 
   &__services {
@@ -58,6 +70,18 @@
 
   &__footer {
     padding: 0 13vw 20px;
+    &::after {
+      position: absolute;
+      content: "";
+      right: -20%;
+      bottom: -80%;
+      width: 478px;
+      height: 497px;
+      background: rgb(213,174,228);
+      background: radial-gradient(circle, rgba(213,174,228, 0.3) 0%, rgba(255, 255, 255, 1) 100%);
+      filter: blur(75px);
+      z-index: -1;
+    }
   }
 }
 
@@ -110,11 +134,17 @@
       background-image: none;
     }
 
-    &__top-selling {
-      background-position-y: 120%;
+    &__top-selling{
+      padding-bottom: 100px;
+      background-image: url(../image/top-selling/pluses.svg), url(../image/top-selling/pluses.svg);
+      background-position: 0 -9px, bottom left;
+      background-repeat: no-repeat;
     }
     &__book-trip {
-      padding: 0 2vw;
+      padding: 75px 2vw;
+      background-image: url(../image/book-trip/example-booked/pluses.svg);
+      background-position: right 100%;
+      background-repeat: no-repeat;
     }
     &__testimonials {
       padding: 0 6vw;
