@@ -69,6 +69,7 @@ a {
   background-position-x: right;
   background-position-y: top;
   background-repeat: no-repeat;
+  overflow: hidden;
 }
 .main-page__top-block {
   margin-bottom: 90px;
